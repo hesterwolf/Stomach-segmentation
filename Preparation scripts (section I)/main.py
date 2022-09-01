@@ -12,7 +12,7 @@ import os
 
 #fill in your path and task_name
 task_name = 'Task002_Stomach'
-your_path = r'D:\nnUNet_models'
+your_path = r'D:\my_folder'
 
 #if you want to train a 2D model, set 'train2D = True' 
 train2D = False
@@ -39,6 +39,6 @@ if __name__ == '__main__':
         random_split_patients.split_patients(root, dim)
         generateJSON.jsonfile(root, task_name)
     else:
-        print('The raw_data folder is created. Fill this folder with your patient data as described in the README.md and then run this script again.')
+        print('The raw_data folder is created. Fill this folder with your patient data as described in step 6 of the guide.')
     
     
